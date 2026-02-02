@@ -80,10 +80,10 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ServiceCard title="Casual Dresses" image="casual_dress.png" />
-            <ServiceCard title="Fashion Dresses" image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=600" />
-            <ServiceCard title="Party Wears" image="https://images.unsplash.com/photo-1621235182902-83b5d378077c?auto=format&fit=crop&q=80&w=600" />
-            <ServiceCard title="Occasional Wears" image="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&q=80&w=600" />
+            <ServiceCard title="Casual Dresses" image="/images/casual_dresses.png" />
+            <ServiceCard title="Fashion Dresses" image="/images/fashion_dress.png" />
+            <ServiceCard title="Party Wears" image="/images/party_dress.png" />
+            <ServiceCard title="Occasional Wears" image="/images/occasional_wears.png" />
           </div>
 
           <div className="mt-8 bg-gray-50 rounded-4xl p-12 flex flex-col items-center justify-center border border-gray-100 opacity-60">
