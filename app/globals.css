@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1E5148;
+  --color-primary-dark: #133932;
+  --color-primary-light: #2c6e62;
+  --color-secondary: #729990;
+  --color-secondary-light: #9dbbb4;
+  --color-accent: #E0A96D;
+  --color-brand-white: #FFFFFF;
+  --color-surface: #F9FAF9;
+  --radius-4xl: 2rem;
+  --radius-5xl: 3rem;
+}
+
+:root {
+  --primary: #1E5148;
+  --secondary: #729990;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #1E5148;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #1E5148;
+  color: #FFFFFF;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(30, 81, 72, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 81, 72, 0.08);
+}
+
+/* Step card interactions */
+.step-card {
+  border: 1px solid rgba(30, 81, 72, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.step-card:hover {
+  border-color: #1E5148;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(30, 81, 72, 0.12);
+}
+
+/* Lenis smooth scrolling core styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
